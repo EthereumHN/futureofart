@@ -100,7 +100,7 @@ const pieces = [
     },
     {
         id: 8,
-        name: 'Invasivo Lion Fish',
+        name: 'Invasivo Lionfish',
         href: '#',
         artist: 'Doris Cruz',
         imageSrc: '/pezleon.gif',
