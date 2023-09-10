@@ -29,7 +29,8 @@ const pieces = [
         imageAlt: 'En el año 3228, la humanidad nalmente logró los ansiados viajes interestelares, llegando a una galaxia remota después de décadas de espera. Sin embargo, la alegría se desvaneció al darse cuenta de que estaban perdidos en el espacio profundo, fuera del alcance de la Tierra.',
         description: 'En el año 3228, la humanidad nalmente logró los ansiados viajes interestelares, llegando a una galaxia remota después de décadas de espera. Sin embargo, la alegría se desvaneció al darse cuenta de que estaban perdidos en el espacio profundo, fuera del alcance de la Tierra.',
         instagram: 'https://www.instagram.com/crazyskulls.eth/',
-        twitter: 'https://twitter.com/MaradiagaElias'
+        twitter: 'https://twitter.com/MaradiagaElias',
+        unoptimized: false,
     },
     {
         id: 2,
@@ -40,6 +41,7 @@ const pieces = [
         imageAlt: 'Como olvidar el siempre honesto canal cero tvhn',
         description: 'Como olvidar el siempre honesto canal cero tvhn',
         twitter: "https://twitter.com/sucito_eth",
+        unoptimized: true,
     },
     {
         id: 3,
@@ -49,7 +51,8 @@ const pieces = [
         imageSrc: '/graf.jpeg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         web: "https://www.behance.net/eezelaya",
-        instagram: 'https://www.instagram.com/Erick_zelaya/'
+        instagram: 'https://www.instagram.com/Erick_zelaya/',
+        unoptimized: false,
 
     },
     {
@@ -62,6 +65,7 @@ const pieces = [
         web: "https://linktr.ee/stupidgiant",
         twitter: "https://twitter.com/giantstupid",
         instagram: "https://www.instagram.com/stupidgiant/",
+        unoptimized: false,
     },
     {
         id: 5,
@@ -70,7 +74,8 @@ const pieces = [
         artist: 'Enmanuel',
         imageSrc: '/TechnoSun.png',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-        instagram: 'https://instagram.com/enmanuel_ehc'
+        instagram: 'https://instagram.com/enmanuel_ehc',
+        unoptimized: false,
     },
     {
         id: 6,
@@ -80,6 +85,7 @@ const pieces = [
         imageSrc: '/legan.jpg',
         imageAlt: 'Estás piezas describen el maltrato emocional que hemos recibido por años  desde distintos sectores de poder hasta de una persona desconocid al final todos tenemos este mismo sentir.',
         instagram: "https://www.instagram.com/leganrooster/",
+        unoptimized: false,
     },
     {
         id: 7,
@@ -90,6 +96,7 @@ const pieces = [
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         instagram: 'https://www.instagram.com/jess.bits/',
         twitter: 'https://twitter.com/JessBits_',
+        unoptimized: true,
     },
     {
         id: 8,
@@ -100,6 +107,7 @@ const pieces = [
         imageAlt: 'Especie invasiva de sorprendente belleza, habitante de nuestros arrecifes la cual debe ser combatida por su único depredador, el ser humano.Esta obra presenta la abstraccion de las aletas de está especie, tratando de penetrar la mente humana, haciéndose visible y real. ',
         description: 'Especie invasiva de sorprendente belleza, habitante de nuestros arrecifes la cual debe ser combatida por su único depredador, el ser humano.Esta obra presenta la abstraccion de las aletas de está especie, tratando de penetrar la mente humana, haciéndose visible y real. ',
         instagram: 'https://www.instagram.com/doris_4rt/',
+        unoptimized: true,
     },
     {
         id: 9,
@@ -110,6 +118,7 @@ const pieces = [
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
         instagram: 'https://www.instagram.com/ahhsun_/',
         twitter: 'https://twitter.com/ahhsun_',
+        unoptimized: true,
     },
     {
         id: 10,
@@ -119,6 +128,7 @@ const pieces = [
         imageSrc: '/coralino.jpg',
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         instagram: 'https://www.instagram.com/recrea_coralino/',
+        unoptimized: false,
     },
     {
         id: 11,
@@ -128,7 +138,8 @@ const pieces = [
         imageSrc: '/ain.jpeg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         twitter: "https://twitter.com/ainsophaurnfts",
-        instagram: "https://instagram.com/xainsophaurx"
+        instagram: "https://instagram.com/xainsophaurx",
+        unoptimized: false,
 
     },
     // More pieces...
@@ -253,7 +264,7 @@ export default function Example() {
                                                 width={500}
                                                 height={500}
                                                 className="h-full w-full object-cover object-center"
-                                                unoptimized={true}
+                                                unoptimized={piece.unoptimized}
                                             />
 
                                         </div>
@@ -308,8 +319,8 @@ export default function Example() {
 
                             <FaqItem header={" Who can Mint?"} isHidden={true} text={<p>This is an exclusive mint, only assistants of the physical exhibition (verified by POAP), <b className="text-purple">PROOF Ecosystem</b> holders that registered in the <a href="https://www.premint.xyz/onboarding-honduran-artists/moonbirds-community-collabs/" target="_blank" className="font-medium text-celeste transition-all duration-200 hover:text-celeste-dark focus:text-celeste hover:underline">Premint</a>, volunteers, and contributors of  <b className="text-purple">Ethereum Honduras</b> will be able to mint.
 
-                            <br></br><br></br>
-                            Allowed addresses will have the opportunity to mint <b className="text-purple">2 NFTs</b> per Artist priced at <b className="text-purple">0.015 ETH</b> each piece.
+                                <br></br><br></br>
+                                Allowed addresses will have the opportunity to mint <b className="text-purple">2 NFTs</b> per Artist priced at <b className="text-purple">0.015 ETH</b> each piece.
                             </p>}></FaqItem>
 
                             <FaqItem header={" How to Mint?"} isHidden={true} text={<p>Once the mint is enabled, allowed addresses can select which pieces they want to mint. The mint will happen directly on Zora.co for <b className="text-purple">0.015 ETH</b> each piece on the Optimism Network.
