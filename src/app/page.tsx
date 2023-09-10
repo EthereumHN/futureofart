@@ -1,8 +1,8 @@
 'use client'
-import React, { useState } from "react";
+import React from "react";
 import { FaqItem } from "./faqItem";
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import { faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -136,14 +136,6 @@ const pieces = [
 ]
 
 export default function Example() {
-
-    const [active, setActive] = useState(false);
-
-    const handleToggle = () => {
-        console.log('yo');
-        setActive(!active);
-    };
-
     return (
         <>
             {/*
@@ -261,6 +253,7 @@ export default function Example() {
                                                 width={500}
                                                 height={500}
                                                 className="h-full w-full object-cover object-center"
+                                                unoptimized={true}
                                             />
 
                                         </div>
