@@ -88,17 +88,6 @@ const pieces = [
         unoptimized: false,
     },
     {
-        id: 7,
-        name: 'Un Rincón',
-        href: '#',
-        artist: 'Jess Bits',
-        imageSrc: '/rincon.gif',
-        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-        instagram: 'https://www.instagram.com/jess.bits/',
-        twitter: 'https://twitter.com/JessBits_',
-        unoptimized: true,
-    },
-    {
         id: 8,
         name: 'Invasivo Lionfish',
         href: '#',
@@ -315,7 +304,7 @@ export default function Example() {
 
                         <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-12 text-black">
 
-                            <FaqItem header={" What is The Future of Art Exhibition?"} isHidden={false} text={<><p>As part of our  <a href="https://www.proof.xyz/society/proposals/74e751c0-08e7-4004-869d-0dd47cba1852" target="_blank" title="" className="font-medium text-celeste transition-all duration-200 hover:text-celeste-dark focus:text-celeste hover:underline"> Moonbird’s Lunar Society Proposal</a>, we partnered with the Museo para la Identidad Nacional (MIN), intending to onboard artists into Web3 and NFTs by providing a complete learning experience through a series of interactive workshops in two different cities in Honduras which had a physical art exhibition at the museum where <b className="text-purple">11 artists</b> showcased <b className="text-purple">3 art pieces each</b>.</p><br></br><p>We wanted to provide to the <b className="text-purple">Honduran & Moonbirds </b> communities the opportunity to mint pieces that were showcased in the exhibition. Each artist picked <b className="text-purple">one piece</b>  from the exhibition which will be allowed to be minted on Zora on the <b className="text-purple">Optimism L2 Network</b>.</p></>}></FaqItem>
+                            <FaqItem header={" What is The Future of Art Exhibition?"} isHidden={false} text={<><p>As part of our  <a href="https://www.proof.xyz/society/proposals/74e751c0-08e7-4004-869d-0dd47cba1852" target="_blank" title="" className="font-medium text-celeste transition-all duration-200 hover:text-celeste-dark focus:text-celeste hover:underline"> Moonbird’s Lunar Society Proposal</a>, we partnered with the Museo para la Identidad Nacional (MIN), intending to onboard artists into Web3 and NFTs by providing a complete learning experience through a series of interactive workshops in two different cities of Honduras which had a physical art exhibition at the museum where <b className="text-purple">11 artists</b> showcased <b className="text-purple">3 art pieces each</b>.</p><br></br><p>We wanted to provide to the <b className="text-purple">Honduran & Moonbirds </b> communities the opportunity to mint pieces that were showcased in the exhibition. 10 artist picked <b className="text-purple">one piece</b>  from the exhibition which will be allowed to be minted on Zora on the <b className="text-purple">Optimism L2 Network</b>.</p></>}></FaqItem>
 
                             <FaqItem header={" Who can Mint?"} isHidden={true} text={<p>This is an exclusive mint, only assistants of the physical exhibition (verified by POAP), <b className="text-purple">PROOF Ecosystem</b> holders that registered in the <a href="https://www.premint.xyz/onboarding-honduran-artists/moonbirds-community-collabs/" target="_blank" className="font-medium text-celeste transition-all duration-200 hover:text-celeste-dark focus:text-celeste hover:underline">Premint</a>, volunteers, and contributors of  <b className="text-purple">Ethereum Honduras</b> will be able to mint.
 
