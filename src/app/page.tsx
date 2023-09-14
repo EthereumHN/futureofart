@@ -58,7 +58,7 @@ const pieces = [
     {
         id: 4,
         name: 'CITYSCAPE',
-        href: '',
+        href: 'https://zora.co/collect/oeth:0xc7fd44944adf743abead075b2e5fdfeee4802c48',
         artist: 'Stupid Giant',
         imageSrc: '/daily.jpg',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
