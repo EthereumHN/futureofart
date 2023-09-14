@@ -23,7 +23,7 @@ const pieces = [
     {
         id: 1,
         name: '3228',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0xdd9a62f8a6aff7fad58abdba0ee2cfb2a4136e47',
         artist: 'Crazy Skulls',
         imageSrc: '/skull.png',
         imageAlt: 'En el año 3228, la humanidad nalmente logró los ansiados viajes interestelares, llegando a una galaxia remota después de décadas de espera. Sin embargo, la alegría se desvaneció al darse cuenta de que estaban perdidos en el espacio profundo, fuera del alcance de la Tierra.',
@@ -35,7 +35,7 @@ const pieces = [
     {
         id: 2,
         name: 'Emission Echoes',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0xa23df97398d7c8609f975ecdbe8808a402dd9a05',
         artist: 'John Mackay / Sucito',
         imageSrc: '/retrowave.gif',
         imageAlt: 'Como olvidar el siempre honesto canal cero tvhn',
@@ -45,8 +45,8 @@ const pieces = [
     },
     {
         id: 3,
-        name: 'Sacerdote Maya',
-        href: '#',
+        name: 'Spaceman',
+        href: 'https://zora.co/collect/oeth:0x9d8767359c04fd531e1f547a46b8c64b1a6c0609',
         artist: 'The Z',
         imageSrc: '/graf.jpeg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
@@ -58,7 +58,7 @@ const pieces = [
     {
         id: 4,
         name: 'CITYSCAPE',
-        href: '#',
+        href: '',
         artist: 'Stupid Giant',
         imageSrc: '/daily.jpg',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -70,7 +70,7 @@ const pieces = [
     {
         id: 5,
         name: 'Techno Sun',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0xba95734b85b9218025cb5988da1289800e35bde5',
         artist: 'Enmanuel',
         imageSrc: '/TechnoSun.png',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
@@ -80,7 +80,7 @@ const pieces = [
     {
         id: 6,
         name: 'ELLA',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0xc616c1532d69d6717660690e42dde40eb1c6dadd',
         artist: 'Legan Rooster',
         imageSrc: '/legan.jpg',
         imageAlt: 'Estás piezas describen el maltrato emocional que hemos recibido por años  desde distintos sectores de poder hasta de una persona desconocid al final todos tenemos este mismo sentir.',
@@ -90,7 +90,7 @@ const pieces = [
     {
         id: 8,
         name: 'Invasivo Lionfish',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0x369f881f7eaa67559fca585ccd898984ba7fc788',
         artist: 'Doris Cruz',
         imageSrc: '/pezleon.gif',
         imageAlt: 'Especie invasiva de sorprendente belleza, habitante de nuestros arrecifes la cual debe ser combatida por su único depredador, el ser humano.Esta obra presenta la abstraccion de las aletas de está especie, tratando de penetrar la mente humana, haciéndose visible y real. ',
@@ -101,7 +101,7 @@ const pieces = [
     {
         id: 9,
         name: 'Save The Drama For Your MAMA!',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0x36d7e39e5c50d3ed29be0e241ff05d4ab85fd0f5',
         artist: 'Ahhsun',
         imageSrc: '/savethedrama.gif',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
@@ -112,7 +112,7 @@ const pieces = [
     {
         id: 10,
         name: 'Si la Economía Circula...',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0x8f361a24ba3e94aa5f8b15bccc3ef4646f4de52f',
         artist: 'Estudio Coralino',
         imageSrc: '/coralino.jpg',
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
@@ -122,7 +122,7 @@ const pieces = [
     {
         id: 11,
         name: ' Ain Soph Aur',
-        href: '#',
+        href: 'https://zora.co/collect/oeth:0x55d9b4d250b91f463c06df8bedc1f4ecd51f9dd8',
         artist: 'Hector Díaz',
         imageSrc: '/ain.jpeg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
@@ -265,13 +265,28 @@ export default function Example() {
                                             >
                                                 Mint
                                             </a> */}
-                                            <button
-                                                // href="#"
-                                                className="rounded-md bg-gray-300 px-2.5 py-1.5 float-right text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-dark" disabled
 
-                                            >
-                                                Mint
-                                            </button>
+                                            {piece.href ?(
+                                                 <a href={piece.href} target="blank">
+                                                 <button
+                                                     className="rounded-md bg-purple px-2.5 py-1.5 float-right text-sm font-semibold text-white shadow-sm hover:bg-purple-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-dark"
+                                                 >
+                                                     Mint
+                                                 </button>
+                                                 </a>
+                                            ) :(
+                                                <a href={piece.href} target="blank">
+                                                <button
+
+                                                    className="rounded-md bg-gray-300 px-2.5 py-1.5 float-right text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-dark" disabled
+
+                                                >
+                                                    Mint
+                                                </button>
+                                                </a>
+                                            ) }
+
+
                                         </h3>
                                         <p className="mt-1 text-lg font-medium text-gray-900">{piece.artist}</p>
                                         <div className=''>
