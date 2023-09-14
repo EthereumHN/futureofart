@@ -48,7 +48,7 @@ const pieces = [
         name: 'Spaceman',
         href: 'https://zora.co/collect/oeth:0x9d8767359c04fd531e1f547a46b8c64b1a6c0609',
         artist: 'The Z',
-        imageSrc: '/graf.jpeg',
+        imageSrc: '/spaceman.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         web: "https://www.behance.net/eezelaya",
         instagram: 'https://www.instagram.com/Erick_zelaya/',
