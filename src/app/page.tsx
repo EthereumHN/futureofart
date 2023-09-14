@@ -281,7 +281,7 @@ export default function Example() {
                                                     className="rounded-md bg-gray-300 px-2.5 py-1.5 float-right text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-dark" disabled
 
                                                 >
-                                                    Mint
+                                                    Coming Soon
                                                 </button>
                                                 </a>
                                             ) }
